@@ -1,0 +1,144 @@
+/* ============================================================================================== 
+This copyright notice must be kept untouched in the stylesheet at all times.
+The original version of this stylesheet and the associated (x)html 
+is available at http://www.script-tutorials.com/whirling-dropdown-menu/
+Copyright (c) Script Tutorials. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
+================================================================================================= */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #dc6628;
+}
+
+h2{
+
+	float: left;
+	text-align:center;
+	color: #060606;
+	font-weight: 200px;
+	font-size: 2cm;
+	width:100%;
+	height: 70PX;
+}
+
+
+#paragraph{
+	
+	text-align:center;
+	font-family:"Trebuchet MS", Arial,"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	FONT-SIZE:25px;
+	color:#000000;
+	font-weight:bold;
+	
+
+}
+
+
+#paragraph:hover{
+    color:#DEE40F;
+	text-decoration:underline;
+	text-transform: uppercase;
+}
+
+
+/**Definiremos as configurações do Container do slide **/
+#sliders{
+	/*Remove o bullet*/
+	list-style: none;  
+	/* Define que position:relative porque os 
+	 * elementos filhos usarão absolute
+	 */
+	position: relative; 
+	/*Define a largura*/
+	width: 1903px;
+	/*Define uma altura*/
+	height:858px;
+	/*Centralizar na horizontal*/
+	margin:0 auto;
+	/*Oculta os elementos que ultrapassarem 
+	* as dimensões definidas
+	*/
+
+	
+	overflow: hidden;
+}
+/*Configuremos os itens do slide*/
+#sliders li{
+	/*Definimos como posição absoluta, seguindo o elemento pai*/
+	position: absolute;
+	/*Define que ficará encostado no topo*/
+	top:0;
+	/*Define que ficará enconstado do lado esquerdo*/
+	left:0;
+	/*Coloca a opacidade zero, pra ocultar*/
+	opacity: 0;
+	/*Define ordenação relacionados os elementos*/
+	z-index: 0;
+	/*Cria uma transição da opacidade com 1 segundo*/
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+/* Agora defiremos uma classe 
+ * que mostrar o item atual
+ */
+#sliders li.slider-active{
+	/*Ordena que ficará a frente dos itens*/
+	z-index: 1;
+	/*Mostra o slide atual*/
+	opacity: 1;
+}
+
+
+/* jogo Alan Prate*/
+
+header {
+    background-color:#212121;
+    box-shadow: 0 -1px 2px #111111;
+    color:#fff;
+    display:block;
+    height:70px;
+    position:relative;
+    width:100%;
+    z-index:100px;
+}
+header h2{
+    font-size: 19px;
+    font-weight: normal;
+    left: 50%;
+    margin-left: -400px;
+    padding: 25px 0;
+    position: absolute;
+    width: 540px;
+}
+header a.stuts,a.stuts:visited{
+    border:none;
+    text-decoration:none;
+    color:#fcfcfc;
+    font-size:14px;
+    left:50%;
+    line-height:31px;
+    margin:23px 0 0 110px;
+    position:absolute;
+    top:0;
+}
+header .stuts span {
+    font-size:22px;
+    font-weight:bold;
+    margin-left:5px;
+}
+#scene {
+    display: block;
+    position: absolute;
+    left: -1px;
+    right: 60%;
+    top: 180px;
+    width: 1905px;
+    height: 788px;
+}
