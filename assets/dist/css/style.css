@@ -57,14 +57,14 @@ body {
   width: 50px;
   height: 24px;
   border-radius: 12px;
-  background-image: url(/img/dark_mode.png);
+  background-image: url(img/dark_mode.png);
   background-size: 76px 24px;
   background-position: -26px 0;
   transition: 100ms;
 }
 body.dark {
   background-color: #000;
-  background-image: url(/img/flashlight.png);
+  background-image: url(img/flashlight.png);
   background-repeat: no-repeat;
   background-size: 500px 500px;
 }
