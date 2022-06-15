@@ -1,42 +1,44 @@
 <!doctype html>
 <html lang="pt-BR" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alan Prates</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-    
-  </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-  
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Alan Prates</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <h3 class="float-md-start mb-0">Contato Via-Email &nbsp;</h3>
-      <a class="nav-link"href="mailto:alan_nz@live.com">alan_nz@live.com</abbr></a>
-        
-      </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan Prates</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Alan Prates</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <h3 class="float-md-start mb-0">Contato Via-Email &nbsp;</h3>
+          <a class="nav-link" href="mailto:alan_nz@live.com">alan_nz@live.com</abbr></a>
+
+        </nav>
+      </div>
+    </header>
+    <div class="page">
+      <text>【 ₩ 】</text>
+      <text>Ligar Lanterna</text>
     </div>
-  </header>
-  <div class="page">
-    <text>【 ₩ 】</text>
-    <text>Ligar Lanterna</text>
-</div>      
-  <div class="dark_mode">
-  </div> 
-  <main class="px-3">
-    <h1>Front-end web development.</h1>
-    <img class="perfil" src="img/perfil.png">
-    <div class="bd-example">
-        
-<!--      <div class="spinner-grow text-primary" role="status">
+    <div class="dark_mode">
+    </div>
+    <main class="px-3">
+      <h1>Front-end web development.</h1>
+      <img class="perfil" src="img/perfil.png">
+      <div class="bd-example">
+
+        <!--      <div class="spinner-grow text-primary" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
       <div class="spinner-grow text-secondary" role="status">
@@ -62,46 +64,48 @@
       </div>
       </div>
       -->
-    <p class="lead">
-      Olá, meu nome é Alan... Sou estudante web apaixonado pelo o que faço, busco sempre está me atualizando em relação a novas tecnologias na área.</p>
-    <p class="lead">
-      <a href="https://github.com/AlanPrates" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Github</a>
-      <a href="maissobremim/index.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Portfolio</a>
-      <a href="https://alandash.vercel.app" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Meu Blog</a>
-    </p>
-  </main>
+        <p class="lead">
+          Olá, meu nome é Alan... Sou estudante web apaixonado pelo o que faço, busco sempre está me atualizando em
+          relação a novas tecnologias na área.</p>
+        <p class="lead">
+          <a href="https://github.com/AlanPrates"
+            class="btn btn-lg btn-secondary fw-bold border-white bg-white">Github</a>
+          <a href="https://alandash.vercel.app" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Meu
+            Blog</a>
+        </p>
+    </main>
 
-  <footer class="mt-auto text-white-50">
-    <p>Copyright © 2022 Alan Prates . All rights reserved.</p>
-  </footer>
-</div>
+    <footer class="mt-auto text-white-50">
+      <p>Copyright © 2022 Alan Prates . All rights reserved.</p>
+    </footer>
+  </div>
 
 
-<script>
-  function updateFlashlight(e) {
-    var style = document.body.style;
-    style.backgroundPositionX = e.pageX - 250 + "px";
-    style.backgroundPositionY = e.pageY - 250 + "px";
-  }
-
-  document.querySelector(".dark_mode").onclick = function(e) {
-    var body = document.body;
-    body.classList.toggle("dark");
-    if (body.classList.contains("dark")) {
-      updateFlashlight(e);
-      ["mousemove", "touchstart", "touchmove", "touchend"].forEach(function(s) {
-        document.documentElement.addEventListener(s, updateFlashlight, false);
-      });
-    } else {
-      ["mousemove", "touchstart", "touchmove", "touchend"].forEach(function(s) {
-        document.documentElement.removeEventListener(s, updateFlashlight, false);
-      });
+  <script>
+    function updateFlashlight(e) {
+      var style = document.body.style;
+      style.backgroundPositionX = e.pageX - 250 + "px";
+      style.backgroundPositionY = e.pageY - 250 + "px";
     }
-  }
-</script>
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="cheatsheet.js"></script>
-  </body>
-  
+    document.querySelector(".dark_mode").onclick = function (e) {
+      var body = document.body;
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        updateFlashlight(e);
+        ["mousemove", "touchstart", "touchmove", "touchend"].forEach(function (s) {
+          document.documentElement.addEventListener(s, updateFlashlight, false);
+        });
+      } else {
+        ["mousemove", "touchstart", "touchmove", "touchend"].forEach(function (s) {
+          document.documentElement.removeEventListener(s, updateFlashlight, false);
+        });
+      }
+    }
+  </script>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="cheatsheet.js"></script>
+</body>
+
 </html>
