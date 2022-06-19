@@ -83,7 +83,7 @@ body.dark .dark_mode {
   animation: float 5s ease-in-out infinite;
   box-shadow: 0 10px 10px;
   border-radius: 50%;
-  background-color:rgb(246, 10, 10);
+  background: linear-gradient(68.15deg, #1D5777 16.62%, #E4F0FC 85.61%);
 }
 
 @keyframes float {
